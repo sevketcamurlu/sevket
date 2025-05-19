@@ -1,1 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ürün Bilgisi</title>
+</head>
+<body onload="speakText()">
+  <h1>Ürün: Lipton Ice Tea 330 ml</h1>
+  <h2>Fiyat: 30 TL</h2>
+
+  <script>
+    function speakText() {
+      const msg = new SpeechSynthesisUtterance("Ürün: Lipton Ice Tea. Fiyat: on iki lira elli kuruş.");
+      msg.lang = "tr-TR";
+      window.speechSynthesis.speak(msg);
+    }
+  </script>
+</body>
+</html>
 
