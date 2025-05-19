@@ -22,13 +22,13 @@
 </head>
 <body>
   <h1>Ürün: Lipton Ice Tea 330 ml</h1>
-  <h2>Fiyat: 30 TL</h2>
+  <h2>Fiyat: 35 TL</h2>
 
   <button onclick="speakText()">Ürün Bilgisini Sesli Dinle</button>
 
   <script>
     function speakText() {
-      const msg = new SpeechSynthesisUtterance("Ürün: Lipton Ice Tea. Fiyat: otuz lira.");
+      const msg = new SpeechSynthesisUtterance("Ürün: Lipton Ice Tea. Fiyat: otuz beş lira.");
       msg.lang = "tr-TR";
       window.speechSynthesis.speak(msg);
     }
